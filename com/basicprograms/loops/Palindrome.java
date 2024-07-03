@@ -1,5 +1,5 @@
 package com.basicprograms.loops;
-
+//first 15 polindromes
 public class Palindrome {
 
 	public static void main(String[] args) {
