@@ -18,12 +18,12 @@ public class Strong_number {
 				
 			}
 			sum =sum+fact;//120+0=120,
-			x= x+sum;
-			//System.out.println(rem+"fact is "+fact);
+			x= x+sum; 
 			
-			System.out.println("sum is"+x);
-			System.out.println(temp1==x?+x +"it s a strong number":"not a strong  ");
-		}
+			}
+		System.out.println("sum is"+x);
+		System.out.println(temp1==x? sum+"it s a strong number":"not a strong  ");
+
 		
 		
 	}
