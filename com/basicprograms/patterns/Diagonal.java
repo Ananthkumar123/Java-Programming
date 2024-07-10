@@ -18,9 +18,9 @@ public class Diagonal
 	
  int rows =5;
 	
-	 for(int r=1;r<=rows;r++)
+	 for(int r=1;r<rows;r++)
 	 {
-		  for(int c=r;c<=rows;c++) //for(int c=rows;c>=r;c--)
+		  for(int c=rows;c>=r;c--) //for(int c=rows;c>=r;c--)
 		 {  //if (c==1||r==rows||r==c)
 			 System.out.print("* ");
 		 }
@@ -38,7 +38,7 @@ public class Diagonal
 
 	 System.out.println(" ---------------");
    // int rows =5;
-     for(int r=1;r<=rows;r++)
+     for(int r=1;r<rows;r++)
      {
     	 for(int c=r;c<=rows;c++)
     	 {
