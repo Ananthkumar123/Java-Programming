@@ -13,29 +13,25 @@ public class DuplicatePrac {
 		 for(int t:a)
 		 System.out.print(t+" ");
 		 
-		 int count=0,k=0;
-		 for(int x=0;x<a.length-2;x++)
-		 { 
-			 
-			 if(a[x]==a[x+1])
-			 {
-				 count++;
-				 
-			 }
-		 }
-		 if(k<count)
-		 {
-			 k=count;
-		 }
-		 if(count>0)
-		 {
-			 System.out.println();
-		 }
-		  
-			 
-		// System.out.println("\n"+count);
-		 
-		 
+		 int count=1;
+		  for(int x=0;x<a.length;x++)
+		  {
+			  if(b[x]==1)
+			  continue;
+			  count=1;
+			  for(int y=x+1;y<a.length;y++)
+			  {
+				  if(a[x]==a[y])
+				  {
+					  b[y]=1;
+					  count++;
+				  }
+				  
+			  }
+			  if(count>1)
+			  System.out.println(a[x]+" duplicates "+count);
+		  }
+ 
 	}
 
 }

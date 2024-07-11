@@ -1,33 +1,35 @@
 
 public class Exam {
-
+//swapping even and odd
 	public static void main(String[] args) {
 	 
-		
-		// int[] x = {120, 200, 016};
-//		 
-//		 for(int i = 0; i < x.length; i++)
-//		{
-//		 System.out.print(x[i] +" ");
-//		 } 
-		 System.out.println("  \n     ");
-		 
-		 double a, b,c;
-		 a = 3.0/0;
-		 b = 0/4.0; 
-		  c=0/0.0;      
-		   System.out.println(a);
-		 System.out.println(b); 
-		   System.out.println(c);
-		 
-		   System.out.println("  \n     ");
-		    
-		   byte x = 127;
-		   x++; 
-		   x++;
-		   System.out.print(x);
+	 int a[] =new int[] {10,20,30,40,50,60,70,80};
+	 int b[] =new int[a.length/2];//odd
+	 int c[] = new int[a.length] ;//even
+	 int d[] =new int[a.length];
 
-		   
+	 for(int x=0;x<a.length;x++)
+	 { 
+		 if(x%2==0)
+		 {
+			 b[x]=a[x];
+			 System.out.print(b[x]+",");
+		 }
+		 else 
+		 {
+			 c[x]=a[x];
+			 System.out.println(c[x]+",");
+			 
+		 }
+	 }
+	 for(int temp:b)
+		 System.out.print(temp+" ");
+	  System.out.println();
+	 for(int x=0;x<a.length;x++)
+	 {
+		// for(int y)
+	 }
+	 
 	}
 
 }

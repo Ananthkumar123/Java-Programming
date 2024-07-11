@@ -19,13 +19,28 @@ public class Swaping {
 		for(int x=a.length/2,y=0;y<=b.length-1;x++,y++)
 		{
 			c[y]=a[x];
-			System.out.print(c[y]);
+			System.out.print(c[y]+",");
+			
 		}
+		 System.out.println();
+		 
+		 for(int x=0,y=c.length-1;x<a.length;x++)
+		 {
+			 if(x<b.length)
+			 {
+				 d[x] =b[x];
+			 }
+			 else 
+			 { 
+				  d[x]=c[y];
+				  y--;
+			 }
+		 }
+		 
+		for(int t :d)
+			System.out.print(t+" ");
 		
-		 
-		 
-		 
-		 
+	
 
 	}
 
