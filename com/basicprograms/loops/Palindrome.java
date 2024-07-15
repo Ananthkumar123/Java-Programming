@@ -11,7 +11,7 @@ public class Palindrome {
 		 for(;num>0;num/=10)
 		 {
 			 int rem = num%10;
-			    rev= rev*10+rem;
+			    rev= rem+rev*10;
 		 }
 		  if(rev == tem) {
 			  System.out.println("polindrome"+temp);

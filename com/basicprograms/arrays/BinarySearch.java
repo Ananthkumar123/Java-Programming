@@ -44,7 +44,8 @@ public class BinarySearch {
 			*/
 		
 		 
-		int res =Arrays.binarySearch(a, 26);
+		int res =Arrays.binarySearch(a, 26); //pre defined method
+		
 		//System.out.println(res);
 		
 		if(res>=0)

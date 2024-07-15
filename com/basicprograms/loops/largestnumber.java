@@ -10,10 +10,13 @@ public class largestnumber {
 			  if(rem>max)//2>1 ,5>2
 			  {
 				  max =rem;//1,2,5
-				System.out.println("largest"+max);
+				//System.out.println("largest"+max);
 			  }
-			 // System.out.println(max+" largest ");
+			 
 		}
+		System.out.println(max+" largest ");
 	}
+	
+	
 
 }

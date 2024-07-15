@@ -4,34 +4,50 @@ import java.util.Arrays;
 // finding duplicates and print 	
 public class DuplicatePrac {
 
-	public static void main(String[] args) {
-		 int a[] = new int[] {10,8,25,60,10,4,10,25,8,6,10};
-		 int b[] = new int[a.length];
+	 public static void main(String args[])
+	 {
+		 int a[] = {56,1,5,45,10,85,5,1};
 		 
-		 System.out.println("sorted array is ");
-		 Arrays.sort(a);
-		 for(int t:a)
-		 System.out.print(t+" ");
-		 
-		 int count=1;
-		  for(int x=0;x<a.length;x++)
-		  {
-			  if(b[x]==1)
-			  continue;
-			  count=1;
-			  for(int y=x+1;y<a.length;y++)
+		 System.out.println("sorted array ");
+	 
+		 for(int x=0;x<a.length-1;x++)
+		 {
+			  if(a[x]>a[x+1])
 			  {
-				  if(a[x]==a[y])
-				  {
-					  b[y]=1;
-					  count++;
-				  }
-				  
-			  }
-			  if(count>1)
-			  System.out.println(a[x]+" duplicates "+count);
-		  }
- 
-	}
+				  int t=a[x];//
+				  a[x] =a[x+1];//
+				  a[x+1] =t;//
+				   x=-1;//
+						  
+			 }
+		 }
+		 for(int t:a)
+			 System.out.print(t+",");
+		 
+		 System.out.println();
+		 System.out.println();
+		 System.out.println();
+		 
+		 int b[] = new int[a.length];
+		 for(int x=0;x<a.length-1;x++)
+		 {
+			 int count=1;
+			 for(int y=x+1;y<a.length-1;y++)
+			 {
+				 if (b[x]==1)
+					 continue;
+				 if(a[x]==a[y])
+				 {
+					 
+					 b[y]=1;
+					 count++;
+				 }
+				 
+			 }
+			 if(count>1)
+				 System.out.println (a[x]+","+count );
+		 }
+		 
+	 }
 
 }

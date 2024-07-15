@@ -14,14 +14,14 @@ public class Swaping {
 			b[x]=a[x];
 			System.out.println(b[x]);
 		}
-		System.out.println("c arry");
 		
+		System.out.println("c arry");		
 		for(int x=a.length/2,y=0;y<=b.length-1;x++,y++)
 		{
 			c[y]=a[x];
 			System.out.print(c[y]+",");
 			
-		}
+     	}
 		 System.out.println();
 		 
 		 for(int x=0,y=c.length-1;x<a.length;x++)

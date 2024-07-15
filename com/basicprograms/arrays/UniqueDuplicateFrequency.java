@@ -18,7 +18,7 @@ public class UniqueDuplicateFrequency {
 			{
 				 if(a[x]==a[y])
 				 {
-					 b[y]=1;
+					 b[y]=1; // we dont use [x] here iterates for outer 
 					 count++;
 				 }
 			}

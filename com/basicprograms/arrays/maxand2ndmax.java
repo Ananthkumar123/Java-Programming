@@ -16,14 +16,14 @@ public class maxand2ndmax {
 		  }
 		  System.out.println("max value is "+max);
 		  
-//		 for(int y=0;y<=a.length-1;y++)
-//		 {
-//			 if(smax<a[y] && max>a[y])//0<70 && 
-//			  {
-//				  smax =a[y];
-//			  }
-//		 }
-//		 System.out.println("2ndmax value is "+smax);
+		 for(int y=0;y<=a.length-1;y++)
+		 {
+			 if(smax<a[y] && max>a[y])//0<70 && 
+			  {
+				  smax =a[y];
+			  }
+		 }
+		 System.out.println("2ndmax value is "+smax);
 		  
 	}
 
