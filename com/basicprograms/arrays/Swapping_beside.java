@@ -20,10 +20,7 @@ public class Swapping_beside {
 			 int tep=a[a.length-1];
 			 a[a.length-1]=a[a.length-2];
 			 a[a.length-2]=tep;
-			 
-			 
-		 
-		 
+	
 		 for(int t:a)
 			 System.out.print(t+" ");
 	}

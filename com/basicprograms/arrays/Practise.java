@@ -3,53 +3,34 @@ package com.basicprograms.arrays;
 public class Practise {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		int a[] ={1,5,20,10,19,12,8};
-		
-		int count1=0; 
-		for(int x=0;x<a.length;x++)
+		// divide into half and first half is ascending and another desecnding 
+		int a[] ={1,20,5,10,191,8,81};
+		int b[] =new int[a.length];
+//		int x;
+//		for( x=0;x<(a.length/2)-1;x++)
+//		{
+//			if(a[x]>a[x+1])
+//			{
+//				int t=a[x];
+//				 a[x]=a[x+1];
+//				 a[x+1]=t;
+//				 x=-1;
+//			}
+//		
+//		}
+//		 
+		for( int x=0,y=0;x<a.length;x++)
 		{
-			int count=0;
-			for(int start=2;start<=a[x];start++)
-			{
-				if(a[x]%start==0)
-				{
-					count++;
-				}
-			}
-			
-			if(count==1||a[x]==1)//
-			{
-				 count1++;
-			}
-
-		}
-		int[] b = new int[count1];
-		for(int x=0,y=0;x<a.length;x++)
-		{
-			int count=0;
-			for(int start=2;start<=a[x];start++)
-			{
-				if(a[x]%start==0)
-				{
-					count++;
-				}
-			}
-			
-			if(count==1||a[x]==1)
-			{
-				 b[y]=a[x];
-				 y++;
-			}
-
-		}
-		System.out.println("Prime numbered array is");
-		
-		for (int t:b)
-		{
-			System.out.print(t+" ");
+			if(x%2==0)
+				b[y]=a[x];
+			 y++;
+			 else
+				 
 		}
 		
+		for(int r:b)
+			System.out.println(r);
+		 		
 
 	}
 

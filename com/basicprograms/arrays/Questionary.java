@@ -40,15 +40,16 @@ public class Questionary {
 	if(c.length%2==0)
 	{
 	 int d[]=new int[c.length];
-     int f[]=new int[c.length/2];
+     int f[]=new int[c.length];
      
      for(int x=0,y=0;x<c.length;x++,y++)
 	  {
-		  if(x%2==0)
+		  if(c[x]%4==0)
 		  {
 			  d[y]=c[x];
 				 
 		  }
+		  
 	   } 
      for(int t:d)
 		 System.out.print(t+",");
@@ -58,8 +59,20 @@ public class Questionary {
 		 int d[]=new int[c.length/2];
 		 int f[]=new int[c.length/2];
 	}
-
+    //printing the array in ascending order
 	 
+	  for(int x=0;x<c.length-1;x++) {
+		  if(c[x]>c[x+1])
+		  {
+			  int temp =c[x];
+			  c[x] =c[x+1];
+			  c[x+1] =temp;
+			  x=-1;
+		  }
+	  }
+	  for(int r:c)
+		  System.out.println(r);
+	  
 	}	 
 }
 
