@@ -52,6 +52,19 @@ public class BinarySearch {
 			System.out.println(res);
 		else
 			System.out.println("\nelement not found"+res);
+		System.out.println();
+		
+		int ser =8,count=0;
+		for(int x=0;x<a.length;x++)//1,2,
+		{
+		  if(a[x]==ser)//1!=4,2!=4,
+		  {
+			  System.out.println("element found at"+x);//sorting the arry in up
+			  count++;
+		   }
+		  
+		}
+		System.out.println(count);
 
 	}
 

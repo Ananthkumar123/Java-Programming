@@ -5,33 +5,35 @@ public class Practise {
 	public static void main(String[] args) {
 		// divide into half and first half is ascending and another desecnding 
 		int a[] ={1,20,5,10,191,8,81};
-		int b[] =new int[a.length];
-//		int x;
-//		for( x=0;x<(a.length/2)-1;x++)
-//		{
-//			if(a[x]>a[x+1])
-//			{
-//				int t=a[x];
-//				 a[x]=a[x+1];
-//				 a[x+1]=t;
-//				 x=-1;
-//			}
-//		
-//		}
-//		 
-		for( int x=0,y=0;x<a.length;x++)
+		int b[] =new int[a.length]; //odd indexs
+		int c[] = new int[a.length-b.length] ;//even i
+		
+		System.out.println("even indexes and odd indexes");
+		
+		for( int x=0,y=0;x<(a.length);x++)
 		{
 			if(x%2==0)
+				
+			{
 				b[y]=a[x];
 			 y++;
-			 else
-				 
+			}
 		}
+			
+		 for(int x=0,y=(a.length/2)+1;x<a.length;x++)
+		 {
+				if(x%2!=0)
+				{
+					b[y]=a[x];
+					y++;
+				}
+		 }
 		
 		for(int r:b)
-			System.out.println(r);
-		 		
-
+			System.out.print(r+",");
+		System.out.println();
+		
+		
+		
 	}
-
-}
+	}
