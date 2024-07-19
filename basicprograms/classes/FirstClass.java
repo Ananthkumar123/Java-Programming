@@ -11,11 +11,12 @@ public class FirstClass {
 		 s1.section='a';
 		// s1.display();
 		  
-		 System.out.println("\n roll is :" +s1.roll +"\nsection is :"+ s1.section +"\ncolleage is :"+s1.collage);
+		 System.out.println("roll is :" +s1.roll +"\nsection is :"+ s1.section +"\ncolleage is :"+s1.collage);
+		 
 		 call s2 = new call();
 		 s2.roll =2;
 		 s2.section='b';
-		 System.out.println("\n roll is :" +s2.roll +"\nsection is :"+ s2.section +"\ncolleage is :"+s2.collage);
+		 System.out.println("roll is :" +s2.roll +"\nsection is :"+ s2.section +"\ncolleage is :"+s2.collage);
 
 	}
 

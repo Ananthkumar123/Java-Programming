@@ -19,6 +19,7 @@ public class Polindrome_String {
 			System.out.println("polindrome");
 		else
 			System.out.println("not apolindrome");
+		System.out.println();
 		
 		Integer x= 121;
 		
@@ -36,6 +37,26 @@ public class Polindrome_String {
 			System.out.println("polindrome");
 		else
 			System.out.println("not a polindrome");
+		
+		System.out.println();
+		System.out.println("another ");
+		System.out.println();
+		//mom and dad print polindrome words
+		
+		String z="mom and dad arora teaches malayalam";
+		String ar[]=z.split(" ");//
+		for(int y=0;y<ar.length;y++)
+		{
+			String w =ar[y];
+			StringBuffer sb1 = new StringBuffer(w);
+			sb1.reverse();
+			
+			if(ar[y].contentEquals(sb1))
+			System.out.println(sb1);
+		}
+		 ///
+
+
 	}
 
 }

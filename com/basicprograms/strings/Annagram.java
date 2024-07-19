@@ -7,7 +7,7 @@ public class Annagram {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		String s1="silent",s2="isten";
+		String s1="silent",s2="istenl";
 		 char c[] =s1.toCharArray();
 		 char d[] =s2.toCharArray();
 		
