@@ -42,7 +42,7 @@ class student extends Teacher
 	 }
 	
 }
-class Method extends student
+class Method1 extends student
 
 {
 	void Method()
