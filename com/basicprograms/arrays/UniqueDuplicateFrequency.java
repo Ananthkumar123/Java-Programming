@@ -4,13 +4,13 @@ public class UniqueDuplicateFrequency {
 
 	public static void main(String[] args) {
 		 
-		int a[]= new int[] {10,8,25,60,10,4,10,25,8,6,10};
-		int b[]= new int[a.length];
-		
+		int a[]= new int[] {1,1,10,8,25,60,10,4,10,25,6,10};
+		//int b[]= new int[a.length];
+		boolean[]b=new boolean[a.length];
 		for(int x=0;x<=a.length-1;x++)
 		{  
 			int count=1;
-			if( b[x]==1)
+			if( b[x]==true)
 			{
 				continue;
 			}
@@ -18,7 +18,7 @@ public class UniqueDuplicateFrequency {
 			{
 				 if(a[x]==a[y])
 				 {
-					 b[y]=1; // we dont use [x] here iterates for outer 
+					 b[y]=true; // we dont use [x] here iterates for outer 
 					 count++;
 				 }
 			}

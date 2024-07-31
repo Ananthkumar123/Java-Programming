@@ -10,7 +10,7 @@ public class Practise {
 		
 		System.out.println("even indexes and odd indexes");
 		
-		for( int x=0,y=0;x<(a.length);x++)
+		for( int x=0,y=0;x<a.length;x++)
 		{
 			if(x%2==0)
 				

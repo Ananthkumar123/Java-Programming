@@ -9,7 +9,8 @@ public class Application_clg {
 //      collage c =new collage();
 //      c.collage();
 		pg g = new pg();
-		g.msc();
+		g.mtech();
+		
 		
 //		ug cg = new ug();
 //		cg.branch();
@@ -143,6 +144,7 @@ class collage extends university
 		 else
 			 System.out.println("invalid input");
 	 }
+	 
 	 void msc()
 	 { 
 		  this.branch(10);
@@ -193,10 +195,11 @@ class collage extends university
 			 System.out.println("fianal fees is "+finalfees);
 		 }
 		 
+		} 
 		 
 		 
 		 
-	 }
+	 
 	 void mtech()
 	 {
 		 this.branch(10);
@@ -204,13 +207,48 @@ class collage extends university
 		 System.out.println("mtech course are \n1.cse \n2.computers \n3.meche");
 		 System.out.println("enter a number");
 		 int n = sc.nextInt();
+		 int fees=100000;
 		 if(n==1)
-			 System.out.println("u choose msces");
+		 { System.out.println("u choose msces");
+		 	 System.out.println("Ms cse fees is "+fees);
+		 }
 		 else if (n==2 )
+		 {
 			 System.out.println("u choose computers");
+		     System.out.println("Ms comuputers fees is "+fees);
+		 }
 		 else
+		 {
 			 System.out.println("u choose mech");
+			 System.out.println("Meach fees is "+fees);
+		 }
+		 
+		 Scanner s = new Scanner(System.in);
+		 System.out.println("enter ur rank");
+		// int z =s.nextInt();
+		 int scolr=sc.nextInt();
+		  int a=5 ,b=10,c=20,finalfees=0; 
+		 if(scolr>10000)
+		 {
+			 System.out.println("ur applicable schoolrship is "+a+"%");
+			 finalfees= fees- (fees*a)/100;
+			 System.out.println("fianal fees is "+finalfees);
+			 
+		 }
+		 else if(scolr>=1000)
+		 {
+			 System.out.println("ur applicable schoolrship is "+b+"%");
+			 finalfees= fees- (fees*b)/100;
+			 System.out.println("fianal fees is "+finalfees);
+		 }
+		 else if(scolr>=100)
+		 {
+			 System.out.println("ur applicable schoolrship is "+c+"%");
+			 finalfees= fees- (fees*c)/100;
+			 System.out.println("fianal fees is "+finalfees);
+		 }
 	 }
+	  
 	
 	 
  }

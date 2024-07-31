@@ -18,7 +18,7 @@ class Myrom
 	String Prime (int a)
 	
 	{   int count=0;
-		for(int start=1;start<a;start++)
+		for(int start=1;start/2<a;start++)
 		{
 			if(a%start==0)
 			{

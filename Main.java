@@ -1,5 +1,6 @@
-// strong
-class Main {
+
+		
+public class Main {
 	public static void main(String arg[]) {
 		 
 		for(int y=1;y<150;y++)
@@ -24,4 +25,5 @@ class Main {
 			System.out.println(sum==y?sum+"strong":"not a arms");
 		}
 	}
+
 }
