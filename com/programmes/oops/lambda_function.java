@@ -8,12 +8,15 @@ public class lambda_function {
 		l1 i =()->
 		{
 			System.out.println("iam add");
+		
 		};
 		i.add();
+		 
 	}
 
 }
 interface  l1
 {
 	void add();
+	 
 }

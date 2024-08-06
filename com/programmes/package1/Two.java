@@ -8,7 +8,7 @@ public class Two {
 	 on.setRoll(9);
 	 on.setPercentage(80);
 	 on.setSection("a section");
-	System.out.println(on);
+	System.out.println(on.getName()+" "+on.getRoll()+" "+on.getPercentage() + on.getSection()); //on //gets the total object
 	}
 
 }
