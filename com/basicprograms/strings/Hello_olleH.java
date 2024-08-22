@@ -15,16 +15,18 @@ public class Hello_olleH {
 		System.out.println(s2);
 		System.out.println();
 		
-		String c ="hello all good morning";
+		String c ="hello all good morning"; //morning good all hello
 		
 		char ch[] = c.toCharArray();
 		
 		for(int x=ch.length-1;x>=0;x--)
+		 
 		{
-			char d =ch[x];//array
+			//char d =ch[x];//array
 	
 			System.out.print(ch[x]);
 		}
+		 
 		System.out.println();
 		
 		// op=ollh lla doog gninrom
@@ -40,9 +42,19 @@ public class Hello_olleH {
 			sb.reverse();
 			
 			b=sb.toString();
-			System.out.print(b+" ");
+			System.out.print(b+" "+"");
 		}
 		System.out.println();
+		
+		String z ="hello all good morning"; //morning good all hello
+		 
+		String y[]= c.split(" ");
+	  for(int x =y.length-1;x>=0;x--)
+	  {
+		  String c2 =y[x].toString();
+				  
+		  System.out.print (c2+" ");
+	  }
 		
 		  
 		

@@ -5,9 +5,10 @@ public class Aarmstrongnumber {
 		int num =1634,count=0,temp=num,sum=0,rem=0;
 		while(num>0) {
 			rem=num%10;//rem= 4,3,6
-			count++;//1,2,3
+			count++;//1,2,3,4
 			num=num/10;//163,16,1,0
 			}
+		System.out.println(count);
 		num=temp;
 		while(num>0) {
 		rem = num%10;

@@ -1,4 +1,5 @@
 package com.basicprograms.arrays;
+import java.util.Arrays;
 import java.util.Random;
 public class SecondmaxSecondndmin {
 
@@ -15,13 +16,17 @@ public class SecondmaxSecondndmin {
 			a[x]=r.nextInt(1,100);
 			System.out.print(a[x]+",");
 		}
-		
+		System.out.println( );
+		Arrays.sort(a);
+		for(int t:a)
+			System.out.print(t+" ");
 		for(int x=0;x<=a.length-1;x++)
 		{	
 			
 			
 			if(max<a[x]) //0<10,10<50,
-			{   Smax=max; //0 10
+			{  
+				Smax=max; //0 10
 				max=a[x];//10,50
 			}
 			else if(Smax<a[x] && Smax<max)//0<10 && 0<10, 10<50 && 10<50

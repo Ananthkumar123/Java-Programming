@@ -10,7 +10,7 @@ public class Reversearray {
 		 {
 			  b[x]=a[x];
 			  System.out.println( b[x]);
-		 }
+		 } 
 		
 //		 for(int x=0;x<=a.length-1;x++)
 //		 {

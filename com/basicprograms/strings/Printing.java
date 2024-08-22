@@ -4,7 +4,7 @@ public class Printing {
 
 	public static void main(String[] args) {
 		//a2b5c6
-		String s="a12b5c6";
+		String s="o2a2hbb5c6";
 		int z=0;
 		for(int x=0;x<s.length();x++)
 		{
@@ -12,7 +12,7 @@ public class Printing {
 				continue;
 			else
 			{
-				
+
 			
 			char c=s.charAt(x);//a,1
 			if(Character.isDigit(c))//1

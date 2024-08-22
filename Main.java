@@ -1,29 +1,44 @@
 
-		
+import java .util.Scanner;
+import java.lang.reflect.Array;
+import java.util.Arrays;
+import java .util.Random;
 public class Main {
-	public static void main(String arg[]) {
-		 
-		for(int y=1;y<150;y++)
+	
+	public static void main(String args[])
+	{ 
+		String c ="hh1l3o1ool"; //  hh lll o
+		String s ="";
+		int count=0;
+		for(int x=0;x<c.length();x++)
 		{
-			int num =y;
-			int sum =0;
-			for(;num>0;num/=10)
+			char d=c.charAt(x) ;
+			if(Character.isAlphabetic(d))
 			{
-				int rem = num%10;	
-				
-				int x = rem;
-				int fact =1;
-				
-				for(;x>=2;x--)
+				if(c.indexOf(d)!=c.lastIndexOf(d))
 				{
-					fact = fact*x;	
+					if(s.indexOf(d)==-1)
+					{
+                           s += d;
+                           count++;
+                            
+						}
+					}
 				}
-				   sum=sum+fact;
+			else
+			{
+				if(Character.isDigit(d))
+				{
+					int n = Character.getNumericValue(d);
+					System.out.println(n);
+				}
 				
-			 	 
-			 }
-			System.out.println(sum==y?sum+"strong":"not a arms");
+			}
+			}
+		System.out.println(s);
 		}
+	  
 	}
 
-}
+
+  

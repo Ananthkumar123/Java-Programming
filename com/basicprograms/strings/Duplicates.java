@@ -28,9 +28,7 @@ public class Duplicates {
 				{
 					s4 =s4+c;
 				}
-			 }
-			
-				 
+			 }	 
 		}
 			
 		System.out.println("duplicates words are "+s4);

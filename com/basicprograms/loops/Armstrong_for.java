@@ -25,7 +25,7 @@ public class Armstrong_for {
 		
 		//System.out.println(sum);
 		
-		System.out.println(x==sum ? x+ " it is armstrong":x+" its not a armstrong");
+		System.out.println(x==sum ? x+ " it is armstrong":"");
 		
 		}
 	}

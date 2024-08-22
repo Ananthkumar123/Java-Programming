@@ -36,15 +36,7 @@ public class Sort_a_char_array {
 				 
 		 }
 		 System.out.println(s5);
-		 
-		 
-		 
-		 
-		 	
-	 
-		
-		 
-		
+	
 
 	}
 
